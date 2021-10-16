@@ -10,6 +10,7 @@ module com.example.schoolmanagement {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires lombok;
+    requires lettuce;
 
     opens com.example.schoolmanagement to javafx.fxml;
     exports com.example.schoolmanagement;
