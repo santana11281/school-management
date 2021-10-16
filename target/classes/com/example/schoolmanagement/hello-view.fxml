@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.LoginController">
+   <ImageView fitHeight="404.0" fitWidth="310.0" layoutX="292.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true"
+              smooth="false">
+      <Image url="@wallpaperflare-cropped.png"/>
+   </ImageView>
+   <TextField fx:id="userName" layoutX="59.0" layoutY="148.0"/>
+   <PasswordField fx:id="password" layoutX="59.0" layoutY="207.0"/>
+   <JFXButton onAction="#loginButton"  buttonType="RAISED" layoutX="64.0" layoutY="268.0" style="-fx-background-color: #4db4d7;" text="Login"
+              textFill="WHITE">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </JFXButton>
+   <JFXButton buttonType="RAISED" layoutX="145.0" layoutY="268.0" style="-fx-background-color: gray;" text="register"
+              textFill="WHITE">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </JFXButton>
+   <Label layoutX="55.0" layoutY="80.0" text="Please sign-in">
+      <font>
+         <Font size="26.0"/>
+      </font>
+   </Label>
+   <Label layoutX="60.0" layoutY="123.0" text="Username:"/>
+   <Label layoutX="60.0" layoutY="186.0" text="Password:"/>
+</AnchorPane>
