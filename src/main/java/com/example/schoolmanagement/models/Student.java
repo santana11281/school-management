@@ -6,6 +6,7 @@ import lombok.Setter;
 import java.util.List;
 
 public class Student {
+
     @Getter @Setter
     private String usuario;
     @Getter @Setter
@@ -15,14 +16,15 @@ public class Student {
     @Getter @Setter
     private String carrera;
     @Getter @Setter
-    private List<Materia> materiasCursadas;
+    private List<MateriaS> materiasCursadas;
     @Getter @Setter
-    private List<Materia> materiasPendientes;
-    private List<Materia> pensum;
+    private List<MateriaS> materiasPendientes;
+    @Getter @Setter
+    private List<MateriaS> pensum;
 
-    public Student(String usuario, String password, String semestre, 
-                   String carrera, List<Materia> materiasCursadas, List<Materia> materiasPendientes,
-                   List<Materia> pensum) {
+    public Student(String usuario, String password, String semestre,
+                   String carrera, List<MateriaS> materiasCursadas, List<MateriaS> materiasPendientes,
+                   List<MateriaS> pensum) {
         this.usuario = usuario;
         this.password = password;
         this.semestre = semestre;
