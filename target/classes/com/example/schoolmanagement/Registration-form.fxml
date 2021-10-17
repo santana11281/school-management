@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.schoolmanagement.RegistrationForm"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.RegistrationForm">
+   <children>
+      <TextField layoutX="353.0" layoutY="120.0" />
+      <TextField layoutX="109.0" layoutY="119.0" prefHeight="26.0" prefWidth="119.0" />
+      <TextField layoutX="111.0" layoutY="171.0" prefHeight="26.0" prefWidth="119.0" />
+      <TextField layoutX="353.0" layoutY="171.0" />
+      <PasswordField layoutX="353.0" layoutY="235.0" />
+      <PasswordField layoutX="111.0" layoutY="235.0" prefHeight="26.0" prefWidth="119.0" />
+      <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="111.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/registration.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="220.0" layoutY="32.0" prefHeight="50.0" prefWidth="197.0" text="Registration">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="119.0" text="Name: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="117.0" text="Last name: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="170.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="170.0" text="Career:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="235.0" text="Password: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="233.0" text="Repeat:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="BASELINE_RIGHT" layoutX="60.0" layoutY="315.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="169.0" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Italic" size="35.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Button alignment="CENTER_RIGHT" layoutX="269.0" layoutY="315.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="169.0" text="Go back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
