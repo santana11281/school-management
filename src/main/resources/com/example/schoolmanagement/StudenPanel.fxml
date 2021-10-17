@@ -7,47 +7,36 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HelloController">
-   <children>
-      <TabPane layoutX="-1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab text="schedule">
+<AnchorPane maxHeight="713.0" maxWidth="1070.0" prefHeight="713.0" prefWidth="1070.0" style="-fx-background-color: white;" stylesheets="@css/studentPanel.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.HelloController">
+    <TabPane layoutX="-1.0" prefHeight="713.0" prefWidth="1070.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Schedule">
             <content>
-              <AnchorPane minHeight="342.0" minWidth="0.0" prefHeight="342.0" prefWidth="600.0">
-                     <children>
-                        <TableView layoutY="6.0" prefHeight="341.0" prefWidth="600.0" style="-fx-color: black;">
-                          <columns>
-                            <TableColumn prefWidth="100.0" style="-fx-color: black; -fx-backgound-color: black;" text="Monday" />
-                            <TableColumn prefWidth="86.0" text="Tuesday" />
-                              <TableColumn prefWidth="103.0" text="Wednesday" />
-                              <TableColumn prefWidth="93.0" text="Thursday" />
-                              <TableColumn prefWidth="100.0" text="Friday" />
-                              <TableColumn prefWidth="117.0" text="Saturday" />
-                          </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
+                <AnchorPane minHeight="342.0" minWidth="0.0" prefHeight="558.0" prefWidth="1070.0">
+                    <TableView layoutY="6.0" prefHeight="651.0" prefWidth="1070.0" style="-fx-color: black;">
+                        <columns>
+                            <TableColumn prefWidth="223.0" style="-fx-color: black; -fx-backgound-color: red;" text="Monday" />
+                            <TableColumn minWidth="0.0" prefWidth="211.0" text="Tuesday" />
+                            <TableColumn prefWidth="206.0" text="Wednesday" />
+                            <TableColumn prefWidth="226.0" text="Thursday" />
+                            <TableColumn prefWidth="201.0" text="Friday" />
+                            <TableColumn prefWidth="75.0" text="Column X" />
+                        </columns>
+                    </TableView>
+                </AnchorPane>
             </content>
-          </Tab>
-            <Tab text="Home work">
-               <content>
-                  <AnchorPane minHeight="337.0" minWidth="0.0" prefHeight="337.0" prefWidth="600.0">
-                     <children>
-                        <Button layoutX="143.0" layoutY="72.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Button" />
-                     </children></AnchorPane>
-               </content>
-            </Tab>
-          <Tab text="subjects">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-            <Tab text="pensum">
-               <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
-            </Tab>
-        </tabs>
-      </TabPane>
-   </children>
+        </Tab>
+        <Tab text="Home work">
+            <AnchorPane minHeight="337.0" minWidth="0.0" prefHeight="337.0" prefWidth="600.0">
+                <children>
+                    <Button layoutX="143.0" layoutY="72.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Button" />
+                </children>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Subjects">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </Tab>
+        <Tab text="Pensum">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="661.0" prefWidth="1070.0" />
+        </Tab>
+    </TabPane>
 </AnchorPane>

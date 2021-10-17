@@ -8,6 +8,8 @@ import java.util.List;
 public class Student {
 
     @Getter @Setter
+    private String name;
+    @Getter @Setter
     private String usuario;
     @Getter @Setter
     private String password;
@@ -22,9 +24,9 @@ public class Student {
     @Getter @Setter
     private List<MateriaS> pensum;
 
-    public Student(String usuario, String password, String semestre,
-                   String carrera, List<MateriaS> materiasCursadas, List<MateriaS> materiasPendientes,
-                   List<MateriaS> pensum) {
+    public Student(String name, String usuario, String password, String semestre, String carrera,
+                   List<MateriaS> materiasCursadas, List<MateriaS> materiasPendientes, List<MateriaS> pensum) {
+        this.name = name;
         this.usuario = usuario;
         this.password = password;
         this.semestre = semestre;
